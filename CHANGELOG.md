@@ -7,6 +7,15 @@
 
 - （現時点で未リリースの変更はありません）
 
+## [4.5.0] - 2026-07-06
+
+### Added
+
+- `packaging/README_for_release.txt`：exe配布ZIPに同梱するエンドユーザー向けReadme
+- `packaging/make_release_zip.ps1`：exe・Readme・LICENSE・CHANGELOGをまとめて
+  配布用ZIPを作成するPowerShellスクリプト
+- `docs/RELEASING.md`：ビルドからGitHub公開までの手順書
+
 ## [4.4.0] - 2026-07-06
 
 ### Added
@@ -96,7 +105,8 @@
 - PyInstallerによるexe化対応（`image_orient_tool.spec`）
 - 復元時に不足していた `core/models.py` / `util/paths.py` / `theme/palette.py` を新規実装
 
-[Unreleased]: https://github.com/yourname/image-orient-tool/compare/v4.4.0...HEAD
+[Unreleased]: https://github.com/yourname/image-orient-tool/compare/v4.5.0...HEAD
+[4.5.0]: https://github.com/yourname/image-orient-tool/compare/v4.4.0...v4.5.0
 [4.4.0]: https://github.com/yourname/image-orient-tool/compare/v4.3.0...v4.4.0
 [4.3.0]: https://github.com/yourname/image-orient-tool/compare/v4.2.0...v4.3.0
 [4.2.0]: https://github.com/yourname/image-orient-tool/compare/v4.1.0...v4.2.0
