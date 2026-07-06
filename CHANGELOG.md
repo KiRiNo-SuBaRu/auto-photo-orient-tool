@@ -7,6 +7,17 @@
 
 - （現時点で未リリースの変更はありません）
 
+## [4.4.0] - 2026-07-06
+
+### Added
+
+- `image_orient_tool/resources/icons/appicon.ico` を作成・同梱。
+  「傾いた人物写真＋回転矢印」のデザイン（16/24/32pxはシンプル版、48px以上は
+  人物シルエット入り詳細版を個別に描画し1つの.icoにまとめている）
+  - 対応解像度: 16, 24, 32, 48, 72, 96, 128, 256 px
+  - これにより `pyinstaller image_orient_tool.spec` でのexe化時に
+    別途アイコンを用意する手間がなくなった
+
 ## [4.3.0] - 2026-07-06
 
 ### Fixed
@@ -85,7 +96,8 @@
 - PyInstallerによるexe化対応（`image_orient_tool.spec`）
 - 復元時に不足していた `core/models.py` / `util/paths.py` / `theme/palette.py` を新規実装
 
-[Unreleased]: https://github.com/yourname/image-orient-tool/compare/v4.3.0...HEAD
+[Unreleased]: https://github.com/yourname/image-orient-tool/compare/v4.4.0...HEAD
+[4.4.0]: https://github.com/yourname/image-orient-tool/compare/v4.3.0...v4.4.0
 [4.3.0]: https://github.com/yourname/image-orient-tool/compare/v4.2.0...v4.3.0
 [4.2.0]: https://github.com/yourname/image-orient-tool/compare/v4.1.0...v4.2.0
 [4.1.0]: https://github.com/yourname/image-orient-tool/compare/v4.0.0...v4.1.0
