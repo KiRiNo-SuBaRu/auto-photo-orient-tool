@@ -1,0 +1,10 @@
+# requirements.txt
+# Anacondaを使わずpipだけで環境構築する場合はこちらを使用してください。
+# Anaconda利用時は environment.yml を使用してください。
+
+PySide6>=6.5.0
+opencv-python>=4.8.1
+Pillow>=10.0.1
+numpy>=1.24.3
+onnxruntime>=1.16.0
+darkdetect>=0.8.0

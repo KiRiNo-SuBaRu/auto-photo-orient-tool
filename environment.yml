@@ -1,0 +1,31 @@
+name: image-orient-tool
+channels:
+  - conda-forge
+  - defaults
+
+dependencies:
+  # Python本体
+  - python=3.11
+
+  # GUI・画像処理
+  - pyside6>=6.5
+  - opencv=4.8.1
+  - pillow=10.0.1
+  - numpy=1.24.3
+
+  # 機械学習・推論
+  - pip
+  - pip:
+      - onnxruntime==1.16.3
+
+  # ユーティリティ
+  - darkdetect=0.8.0
+
+  # 開発・ビルド用（オプション）
+  - pyinstaller=6.3.0
+  - pytest=7.4.3
+  - pytest-qt=4.2.0
+
+  # デバッグ・開発支援（オプション）
+  - ipython=8.18.1
+  - black=23.12.1
